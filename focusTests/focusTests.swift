@@ -2,8 +2,6 @@
 //  focusTests.swift
 //  focusTests
 //
-//  Created by Matt Firth on 3/14/24.
-//
 
 import XCTest
 

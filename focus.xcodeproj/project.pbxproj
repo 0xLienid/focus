@@ -14,6 +14,9 @@
 		524EEFEA2BA3FFAB007E7943 /* focusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEFE92BA3FFAB007E7943 /* focusTests.swift */; };
 		524EEFF42BA3FFAB007E7943 /* focusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEFF32BA3FFAB007E7943 /* focusUITests.swift */; };
 		524EEFF62BA3FFAB007E7943 /* focusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEFF52BA3FFAB007E7943 /* focusUITestsLaunchTests.swift */; };
+		524EF0032BA40056007E7943 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF0022BA40056007E7943 /* utils.swift */; };
+		524EF00B2BA40790007E7943 /* AppSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF00A2BA40790007E7943 /* AppSelector.swift */; };
+		524EF00D2BA40D5C007E7943 /* InstalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF00C2BA40D5C007E7943 /* InstalledApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		524EEFEF2BA3FFAB007E7943 /* focusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = focusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524EEFF32BA3FFAB007E7943 /* focusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusUITests.swift; sourceTree = "<group>"; };
 		524EEFF52BA3FFAB007E7943 /* focusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		524EF0022BA40056007E7943 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		524EF00A2BA40790007E7943 /* AppSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelector.swift; sourceTree = "<group>"; };
+		524EF00C2BA40D5C007E7943 /* InstalledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +101,14 @@
 		524EEFD62BA3FFA9007E7943 /* focus */ = {
 			isa = PBXGroup;
 			children = (
+				524EF0072BA4068B007E7943 /* models */,
+				524EF0042BA40542007E7943 /* views */,
 				524EEFD72BA3FFA9007E7943 /* focusApp.swift */,
 				524EEFD92BA3FFA9007E7943 /* ContentView.swift */,
 				524EEFDB2BA3FFAB007E7943 /* Assets.xcassets */,
 				524EEFDD2BA3FFAB007E7943 /* focus.entitlements */,
 				524EEFDE2BA3FFAB007E7943 /* Preview Content */,
+				524EF0022BA40056007E7943 /* utils.swift */,
 			);
 			path = focus;
 			sourceTree = "<group>";
@@ -127,6 +136,22 @@
 				524EEFF52BA3FFAB007E7943 /* focusUITestsLaunchTests.swift */,
 			);
 			path = focusUITests;
+			sourceTree = "<group>";
+		};
+		524EF0042BA40542007E7943 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				524EF00A2BA40790007E7943 /* AppSelector.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		524EF0072BA4068B007E7943 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				524EF00C2BA40D5C007E7943 /* InstalledApp.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524EF0032BA40056007E7943 /* utils.swift in Sources */,
 				524EEFDA2BA3FFA9007E7943 /* ContentView.swift in Sources */,
+				524EF00B2BA40790007E7943 /* AppSelector.swift in Sources */,
 				524EEFD82BA3FFA9007E7943 /* focusApp.swift in Sources */,
+				524EF00D2BA40D5C007E7943 /* InstalledApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,20 +2,33 @@
 //  ContentView.swift
 //  focus
 //
-//  Created by Matt Firth on 3/14/24.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var allApps = getInstalledApps()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Text("Select Allowed Apps")
+                .frame(maxWidth: .infinity, alignment: .leading)
+            List(allApps.indices, id: \.self) { index in
+                HStack{
+                    Text(allApps[index].name)
+                    Spacer()
+                    Toggle("", isOn: $allApps[index].isAllowed
+                    ).labelsHidden()
+                }
+            }
         }
         .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Button("Focus") {
+            print ("button pressed")
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .bottomTrailing)
+        .background(Color.gray.opacity(0.2))
     }
 }
 
