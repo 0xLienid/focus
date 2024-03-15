@@ -17,6 +17,7 @@
 		524EF0032BA40056007E7943 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF0022BA40056007E7943 /* utils.swift */; };
 		524EF00B2BA40790007E7943 /* AppSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF00A2BA40790007E7943 /* AppSelector.swift */; };
 		524EF00D2BA40D5C007E7943 /* InstalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF00C2BA40D5C007E7943 /* InstalledApp.swift */; };
+		524EF00F2BA412A5007E7943 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 524EF00E2BA412A5007E7943 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		524EF0022BA40056007E7943 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		524EF00A2BA40790007E7943 /* AppSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelector.swift; sourceTree = "<group>"; };
 		524EF00C2BA40D5C007E7943 /* InstalledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledApp.swift; sourceTree = "<group>"; };
+		524EF00E2BA412A5007E7943 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		524EEFCB2BA3FFA9007E7943 = {
 			isa = PBXGroup;
 			children = (
+				524EF00E2BA412A5007E7943 /* .gitignore */,
 				524EEFD62BA3FFA9007E7943 /* focus */,
 				524EEFE82BA3FFAB007E7943 /* focusTests */,
 				524EEFF22BA3FFAB007E7943 /* focusUITests */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				524EEFE02BA3FFAB007E7943 /* Preview Assets.xcassets in Resources */,
+				524EF00F2BA412A5007E7943 /* .gitignore in Resources */,
 				524EEFDC2BA3FFAB007E7943 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
