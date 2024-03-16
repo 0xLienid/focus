@@ -29,3 +29,14 @@ func getActiveApps() -> [NSRunningApplication] {
     let apps = workspace.runningApplications.filter{ $0.activationPolicy == .regular }
     return apps
 }
+
+func hideIllegalApps(allowedApps: [String]) {
+    let activeApps: [NSRunningApplication] = getActiveApps()
+    for app in activeApps {
+        if let activeAppName = app.localizedName {
+            if (!allowedApps.contains(activeAppName)) {
+                app.hide()
+            }
+        }
+    }
+}

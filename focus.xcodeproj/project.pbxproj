@@ -15,9 +15,13 @@
 		524EEFF42BA3FFAB007E7943 /* focusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEFF32BA3FFAB007E7943 /* focusUITests.swift */; };
 		524EEFF62BA3FFAB007E7943 /* focusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEFF52BA3FFAB007E7943 /* focusUITestsLaunchTests.swift */; };
 		524EF0032BA40056007E7943 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF0022BA40056007E7943 /* utils.swift */; };
-		524EF00B2BA40790007E7943 /* AppSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF00A2BA40790007E7943 /* AppSelector.swift */; };
 		524EF00D2BA40D5C007E7943 /* InstalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF00C2BA40D5C007E7943 /* InstalledApp.swift */; };
 		524EF00F2BA412A5007E7943 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 524EF00E2BA412A5007E7943 /* .gitignore */; };
+		52626E0C2BA4A2C800CB90BE /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52626E0B2BA4A2C800CB90BE /* TimerData.swift */; };
+		52626E0E2BA4A32000CB90BE /* TimerSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52626E0D2BA4A32000CB90BE /* TimerSetterView.swift */; };
+		52626E102BA4A80100CB90BE /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52626E0F2BA4A80100CB90BE /* FocusView.swift */; };
+		52626E122BA4B55300CB90BE /* AppLaunchObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52626E112BA4B55300CB90BE /* AppLaunchObserver.swift */; };
+		52626E142BA511EF00CB90BE /* WebsiteFilterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52626E132BA511EF00CB90BE /* WebsiteFilterProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +54,14 @@
 		524EEFF32BA3FFAB007E7943 /* focusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusUITests.swift; sourceTree = "<group>"; };
 		524EEFF52BA3FFAB007E7943 /* focusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		524EF0022BA40056007E7943 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
-		524EF00A2BA40790007E7943 /* AppSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelector.swift; sourceTree = "<group>"; };
 		524EF00C2BA40D5C007E7943 /* InstalledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledApp.swift; sourceTree = "<group>"; };
 		524EF00E2BA412A5007E7943 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		52626E0B2BA4A2C800CB90BE /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		52626E0D2BA4A32000CB90BE /* TimerSetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSetterView.swift; sourceTree = "<group>"; };
+		52626E0F2BA4A80100CB90BE /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		52626E112BA4B55300CB90BE /* AppLaunchObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchObserver.swift; sourceTree = "<group>"; };
+		52626E132BA511EF00CB90BE /* WebsiteFilterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteFilterProvider.swift; sourceTree = "<group>"; };
+		52626E152BA546FB00CB90BE /* focusDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = focusDebug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 		524EEFD62BA3FFA9007E7943 /* focus */ = {
 			isa = PBXGroup;
 			children = (
+				52626E152BA546FB00CB90BE /* focusDebug.entitlements */,
 				524EF0072BA4068B007E7943 /* models */,
 				524EF0042BA40542007E7943 /* views */,
 				524EEFD72BA3FFA9007E7943 /* focusApp.swift */,
@@ -144,7 +154,8 @@
 		524EF0042BA40542007E7943 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				524EF00A2BA40790007E7943 /* AppSelector.swift */,
+				52626E0D2BA4A32000CB90BE /* TimerSetterView.swift */,
+				52626E0F2BA4A80100CB90BE /* FocusView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -153,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				524EF00C2BA40D5C007E7943 /* InstalledApp.swift */,
+				52626E0B2BA4A2C800CB90BE /* TimerData.swift */,
+				52626E112BA4B55300CB90BE /* AppLaunchObserver.swift */,
+				52626E132BA511EF00CB90BE /* WebsiteFilterProvider.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -289,10 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				524EF0032BA40056007E7943 /* utils.swift in Sources */,
+				52626E102BA4A80100CB90BE /* FocusView.swift in Sources */,
 				524EEFDA2BA3FFA9007E7943 /* ContentView.swift in Sources */,
-				524EF00B2BA40790007E7943 /* AppSelector.swift in Sources */,
 				524EEFD82BA3FFA9007E7943 /* focusApp.swift in Sources */,
+				52626E0C2BA4A2C800CB90BE /* TimerData.swift in Sources */,
 				524EF00D2BA40D5C007E7943 /* InstalledApp.swift in Sources */,
+				52626E142BA511EF00CB90BE /* WebsiteFilterProvider.swift in Sources */,
+				52626E122BA4B55300CB90BE /* AppLaunchObserver.swift in Sources */,
+				52626E0E2BA4A32000CB90BE /* TimerSetterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,10 +466,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = focus/focus.entitlements;
+				CODE_SIGN_ENTITLEMENTS = focus/focusDebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"focus/Preview Content\"";
+				DEVELOPMENT_TEAM = 9CS2N35T58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -469,10 +490,11 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = none.focus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.focusappmf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,9 +507,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = focus/focus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"focus/Preview Content\"";
+				DEVELOPMENT_TEAM = 9CS2N35T58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -505,10 +529,11 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = none.focus;
+				PRODUCT_BUNDLE_IDENTIFIER = test.focus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
