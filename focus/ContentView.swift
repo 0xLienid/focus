@@ -8,10 +8,11 @@ import SwiftUI
 struct ContentView: View {
     @State private var currentView = "home"
     @StateObject private var timerData = TimerData()
-    @State private var allowedApps: [String] = []
+    @State private var allowedApps: [String] = [NSRunningApplication.current.localizedName!]
     @State private var allApps: [InstalledApp]
     @StateObject private var appLaunchObserver: AppLaunchObserver = AppLaunchObserver()
     @State private var searchText = ""
+    @FocusState private var isSearchBoxFocused: Bool
     
     init() {
         _allApps = State(initialValue: getInstalledApps())
@@ -49,6 +50,12 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 TextField("Search...", text: $searchText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($isSearchBoxFocused)
+                    .onAppear {
+                        DispatchQueue.main.async {
+                            self.isSearchBoxFocused = true
+                        }
+                    }
                     .padding()
                 List(filteredApps.indices, id: \.self) { index in
                     HStack{

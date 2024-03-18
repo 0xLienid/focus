@@ -7,6 +7,7 @@ import SwiftUI
 
 struct TimerSetterView: View {
     @State private var minutes: String = ""
+    @FocusState private var isTimeEntryFocused: Bool
     @Binding var currentViewBinding: String
     @ObservedObject var timerData: TimerData
     
@@ -17,6 +18,12 @@ struct TimerSetterView: View {
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             TextField("Time (minutes)", text: $minutes)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .focused($isTimeEntryFocused)
+                .onAppear {
+                    DispatchQueue.main.async {
+                        self.isTimeEntryFocused = true
+                    }
+                }
                 .frame(width: 250, height: 50, alignment: .leading)
                 .padding()
             HStack {

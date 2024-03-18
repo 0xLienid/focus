@@ -41,7 +41,7 @@ struct FocusView: View {
                 }
             Spacer()
             Text("Allowed Apps")
-            List(allowedAppsBinding, id: \.self) { app in
+            List(allowedAppsBinding.filter{ $0 != NSRunningApplication.current.localizedName! }, id: \.self) { app in
                 Text(app)
             }
         }
